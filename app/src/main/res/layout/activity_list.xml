@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity">
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline9"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="20dp" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline10"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="20dp" />
+
+  <Button
+      android:id="@+id/button7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Button"
+      app:icon="@android:drawable/ic_menu_search"
+      tools:layout_editor_absoluteX="34dp"
+      tools:layout_editor_absoluteY="33dp" />
+
+  <EditText
+      android:id="@+id/editTextTextPersonName2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:text="VCXVX"
+      tools:layout_editor_absoluteX="185dp"
+      tools:layout_editor_absoluteY="40dp" />
+
+  <CheckBox
+      android:id="@+id/checkBox"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Dogs"
+      tools:layout_editor_absoluteX="34dp"
+      tools:layout_editor_absoluteY="114dp" />
+
+  <CheckBox
+      android:id="@+id/checkBox2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Cats"
+      tools:layout_editor_absoluteX="34dp"
+      tools:layout_editor_absoluteY="175dp" />
+
+  <RadioButton
+      android:id="@+id/radioButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Pirates"
+      tools:layout_editor_absoluteX="151dp"
+      tools:layout_editor_absoluteY="114dp" />
+
+  <RadioButton
+      android:id="@+id/radioButton2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Ninjas"
+      tools:layout_editor_absoluteX="151dp"
+      tools:layout_editor_absoluteY="175dp" />
+
+  <ToggleButton
+      android:id="@+id/toggleButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="ToggleButton"
+      android:textOff="ON"
+      tools:layout_editor_absoluteX="155dp"
+      tools:layout_editor_absoluteY="266dp" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Toggles"
+      android:textSize="20sp"
+      tools:layout_editor_absoluteX="34dp"
+      tools:layout_editor_absoluteY="277dp" />
+
+  <Switch
+      android:id="@+id/switch1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:layout_editor_absoluteX="280dp"
+      tools:layout_editor_absoluteY="277dp" />
+
+  <Spinner
+      android:id="@+id/spinner"
+      android:layout_width="207dp"
+      android:layout_height="41dp"
+      tools:layout_editor_absoluteX="34dp"
+      tools:layout_editor_absoluteY="345dp" />
+
+  <SeekBar
+      android:id="@+id/seekBar"
+      android:layout_width="361dp"
+      android:layout_height="41dp"
+      tools:layout_editor_absoluteX="34dp"
+      tools:layout_editor_absoluteY="417dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
