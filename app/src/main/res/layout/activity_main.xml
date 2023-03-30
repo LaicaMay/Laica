@@ -1,67 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:orientation="vertical"
     android:paddingStart="16dp"
-    android:paddingEnd="16dp">
+    android:paddingEnd="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/To" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="381dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/Subject" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="380dp"
+        android:layout_height="560dp"
+        android:ems="10"
+        android:gravity="top"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/Message" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="122dp"
         android:layout_height="56dp"
-        android:text="Button"
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Send"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.963" />
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="270dp"
+        android:text="@string/Send" />
 
-    <EditText
-        android:id="@+id/txtTo"
-        android:layout_width="360dp"
-        android:layout_height="49dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/To"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.313"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042" />
 
-    <EditText
-        android:id="@+id/txtSubject"
-        android:layout_width="361dp"
-        android:layout_height="51dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/Subject"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
-
-    <EditText
-        android:id="@+id/txtMessage"
-        android:layout_width="361dp"
-        android:layout_height="52dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/Message"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="184dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

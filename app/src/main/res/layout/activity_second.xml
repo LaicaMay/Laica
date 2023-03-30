@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThirdActivity"
+    tools:context=".SecondActivity"
     android:paddingStart="16dp"
     android:paddingEnd="16dp">
 
@@ -13,13 +13,8 @@
         android:layout_width="122dp"
         android:layout_height="56dp"
         android:text="@string/Send"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957"
-        tools:ignore="MissingConstraints" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
@@ -27,36 +22,25 @@
         android:layout_height="48dp"
         android:ems="10"
         android:hint="@string/To"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
+        android:layout_marginTop="10dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="381dp"
         android:layout_height="48dp"
+        android:layout_marginTop="5dp"
         android:ems="10"
         android:hint="@string/Subject"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12" />
+        android:layout_below="@id/editTextTextPersonName4" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/Message"
+        android:layout_below="@id/editTextTextPersonName5"
         android:gravity="top"
-        app:layout_constraintBottom_toTopOf="@id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName5"
-        app:layout_constraintVertical_bias="0.214" />
+        android:layout_above="@id/button2" />
 
 </RelativeLayout>
